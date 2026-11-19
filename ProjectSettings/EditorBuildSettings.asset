@@ -6,15 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/BodyCam FPS/DemoScene.unity
+    path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 0
     path: Assets/AtmosphericHouse/Scenes/House_worn_night.unity
     guid: 69341aa2f2a506540b1e6e7ca2eab5e4
-  - enabled: 1
+  - enabled: 0
     path: Assets/AtmosphericHouse/Scenes/House_clean_day.unity
     guid: b43f678dde1fc4c4aa5ebb73dc147273
   - enabled: 0
     path: Assets/OfficeAndPoliceStation/Scenes/OfficePack_Example.unity
     guid: 88550ded27abe9c4d85f683d42bcb777
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 4418a9292df41d94880abf0d57454a37,
+      type: 2}
+  m_UseUCBPForAssetBundles: 0
