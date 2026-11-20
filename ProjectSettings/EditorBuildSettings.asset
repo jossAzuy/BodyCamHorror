@@ -18,6 +18,6 @@ EditorBuildSettings:
     path: Assets/OfficeAndPoliceStation/Scenes/OfficePack_Example.unity
     guid: 88550ded27abe9c4d85f683d42bcb777
   m_configObjects:
-    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 4418a9292df41d94880abf0d57454a37,
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: b5fd6cc5dcf207d47a56cafb0b5abd87,
       type: 2}
   m_UseUCBPForAssetBundles: 0
