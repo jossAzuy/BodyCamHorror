@@ -25,7 +25,7 @@ MonoBehaviour:
   grenadeDelay: 2.1
   gaitSmoothing: 8
   ikWeight: 1
-  aimSpeed: 2.5
+  aimSpeed: 1
   aimingMotion: {fileID: 11400000, guid: 378c58675d76a5447b524e24fd97e160, type: 2}
   fireModeMotion: {fileID: 11400000, guid: 609ac1aa3b238e94cba7951e370faeae, type: 2}
   generalSounds:

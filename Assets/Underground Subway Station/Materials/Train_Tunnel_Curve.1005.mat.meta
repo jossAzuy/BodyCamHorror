@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4912c6379788256489aa474b2ebddc5b
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 332280
+  packageName: Modular - Underground Subway Station
+  packageVersion: 1.0
+  assetPath: Assets/Underground Subway Station/Materials/Train_Tunnel_Curve.1005.mat
+  uploadId: 792606

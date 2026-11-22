@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 216ca6cdc8b71a148903ce07d9c4e65e
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 332280
+  packageName: Modular - Underground Subway Station
+  packageVersion: 1.0
+  assetPath: Assets/Underground Subway Station/Shaders/DoubleSidedLit.shader
+  uploadId: 792606

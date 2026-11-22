@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 5384cc400c8f7aa469f6706d7f1a0fd0
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 332280
+  packageName: Modular - Underground Subway Station
+  packageVersion: 1.0
+  assetPath: Assets/Underground Subway Station/Prefabs/Train_Tunnel_Curve.prefab
+  uploadId: 792606

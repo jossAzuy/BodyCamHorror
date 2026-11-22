@@ -120,7 +120,7 @@ MonoBehaviour:
     m_Value: 0
   tonemap:
     m_OverrideState: 1
-    m_Value: 3
+    m_Value: 1
   tonemapAGXGamma:
     m_OverrideState: 0
     m_Value: 2.5
@@ -135,7 +135,7 @@ MonoBehaviour:
     m_Value: 1
   saturate:
     m_OverrideState: 1
-    m_Value: -2
+    m_Value: 0
   brightness:
     m_OverrideState: 0
     m_Value: 1.05
@@ -146,7 +146,7 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 0
   sepia:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 0.128
   tintColor:
     m_OverrideState: 0
@@ -162,10 +162,10 @@ MonoBehaviour:
     m_Value: 1
   lutIntensity:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0
   lutTexture:
     m_OverrideState: 1
-    m_Value: {fileID: 2800000, guid: 7610786d50b304f5d9819095bc8abb6f, type: 3}
+    m_Value: {fileID: 2800000, guid: 2f17411958b774a6d8af05e5a97f7241, type: 3}
     dimension: 1
   bloomIntensity:
     m_OverrideState: 0
@@ -429,7 +429,7 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 0.01
   lensDirtIntensity:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 0.3
   lensDirtThreshold:
     m_OverrideState: 1
@@ -442,7 +442,7 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 3
   chromaticAberrationIntensity:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 0.009
   chromaticAberrationShift:
     m_OverrideState: 1
@@ -630,15 +630,15 @@ MonoBehaviour:
     m_Value: 0.15
   vignettingOuterRing:
     m_OverrideState: 0
-    m_Value: 0.85
+    m_Value: -2
   vignettingInnerRing:
-    m_OverrideState: 1
-    m_Value: 1
+    m_OverrideState: 0
+    m_Value: 0.446
   vignettingFade:
     m_OverrideState: 0
-    m_Value: 0
+    m_Value: 0.334
   vignettingCircularShape:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 1
   vignettingCircularShapeFitMode:
     m_OverrideState: 0
@@ -647,20 +647,20 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 1
   vignettingBlink:
-    m_OverrideState: 1
-    m_Value: 0
+    m_OverrideState: 0
+    m_Value: 0.079
   vignettingBlinkStyle:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 0
   vignettingCenter:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: {x: 0.5, y: 0.5}
   vignettingColor:
     m_OverrideState: 0
-    m_Value: {r: 0, g: 0, b: 0, a: 1}
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
   vignettingMask:
     m_OverrideState: 0
-    m_Value: {fileID: 0}
+    m_Value: {fileID: 2800000, guid: a497183ade831dc4aa44bf44b5ce27b8, type: 3}
     dimension: 1
   outline:
     m_OverrideState: 0
@@ -743,35 +743,35 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 0.005
   frame:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 1
   frameStyle:
     m_OverrideState: 1
     m_Value: 0
   frameBandHorizontalSize:
     m_OverrideState: 1
-    m_Value: 0.115
+    m_Value: 0.02
   frameBandHorizontalSmoothness:
     m_OverrideState: 1
-    m_Value: 0.024
+    m_Value: 0.02
   frameBandVerticalSize:
     m_OverrideState: 1
-    m_Value: 0.162
+    m_Value: 0.058
   frameBandVerticalSmoothness:
     m_OverrideState: 1
     m_Value: 0.062
   frameColor:
     m_OverrideState: 1
-    m_Value: {r: 0, g: 0, b: 0, a: 1}
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
   frameThickness:
-    m_OverrideState: 0
-    m_Value: 0.181
+    m_OverrideState: 1
+    m_Value: 0.056
   frameSharpness:
     m_OverrideState: 1
-    m_Value: 12
+    m_Value: 61
   frameMask:
-    m_OverrideState: 1
-    m_Value: {fileID: 0}
+    m_OverrideState: 0
+    m_Value: {fileID: 2800000, guid: 2614ffbed25f9d54ea4108f1838c0902, type: 3}
     dimension: 1
   filmGrainEnabled:
     m_OverrideState: 0

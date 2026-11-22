@@ -16,10 +16,10 @@ MonoBehaviour:
     type: 2}
   recoilAnimData: {fileID: 11400000, guid: 2c844a366fdbb904ba08f92aa427b572, type: 2}
   cameraShake: {fileID: 11400000, guid: b786bb4be603b364b9ae835875efde57, type: 2}
-  ikOffset: {x: 0, y: 0.015, z: 0.01}
+  ikOffset: {x: 0, y: 0.03, z: 0}
   leftClavicleOffset: {x: 0, y: 0, z: 0}
   rightClavicleOffset: {x: 0, y: 0, z: 0}
-  aimPointOffset: {x: 0, y: 0, z: -0.2}
+  aimPointOffset: {x: -0.1, y: 0, z: -0.2}
   rightHandSprintOffset: {x: -0.005693473, y: 0.13040198, z: -0.043246217, w: 0.9905013}
   adsBlend: 0.822
   fireRate: 600

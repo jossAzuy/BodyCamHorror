@@ -1,0 +1,194 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3011180874795243944
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7163123686105699987}
+  - component: {fileID: 1099669112513828066}
+  - component: {fileID: 7110228903634299276}
+  - component: {fileID: 3563544373512973938}
+  - component: {fileID: 3090561020673029638}
+  - component: {fileID: 2486128900697214348}
+  m_Layer: 0
+  m_Name: PlayerBody
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7163123686105699987
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3011180874795243944}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!143 &1099669112513828066
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3011180874795243944}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 1.8
+  m_Radius: 0.3
+  m_SlopeLimit: 45
+  m_StepOffset: 0.35
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0.9, z: 0}
+--- !u!114 &7110228903634299276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3011180874795243944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebab9726275374745ba1d896c10b9546, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Bodycam.BodycamPlayerController
+  rigRoot: {fileID: 0}
+  cameraPoint: {fileID: 0}
+  animator: {fileID: 0}
+  playerSound: {fileID: 0}
+  playerInput: {fileID: 0}
+  moveActionName: Move
+  lookActionName: Look
+  jumpActionName: Jump
+  mouseSensitivity: 0.07
+  gamepadSensitivity: 160
+  pitchLimit: 80
+  lookSmoothing: 8
+  lockCursor: 1
+  walkSpeed: 1.1
+  sprintSpeed: 3.4
+  tacSprintSpeed: 4
+  acceleration: 7
+  deceleration: 10
+  airControl: 0.05
+  jumpHeight: 0
+  gravity: 20
+  airGraceTime: 0.12
+  landSoundMinAirTime: 0.25
+  eyeHeight: 1.5
+  locomotionSpeedParam: LocomotionSpeed
+  locomotionAnimScale: 0.6
+--- !u!114 &3563544373512973938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3011180874795243944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1b83326cc6cc684b976bf6b3c2a5056, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Bodycam.BodycamMotion
+  rigRoot: {fileID: 0}
+  cameraPoint: {fileID: 0}
+  body: {fileID: 0}
+  sprintReference: 4
+  stepsPerMeter: 0.95
+  bobHeight: 0.035
+  bobRoll: 0.8
+  bobPitch: 0.65
+  bobSideways: 0.012
+  turnRoll: 0.018
+  maxTurnRoll: 3
+  turnSmoothing: 5
+  landingKick: 2
+  jumpKick: -1.2
+  springStiffness: 45
+  springDamping: 8
+  noiseAngle: 0.2
+  noiseSpeed: 0.55
+  breathingEnabled: 1
+  restBreathRate: 0.6
+  tiredBreathRate: 0.6
+  restBreathPitch: 0.25
+  tiredBreathPitch: 0.9
+  restBreathHeight: 0.005
+  tiredBreathHeight: 0.016
+  secondsToExhaust: 10
+  secondsToRecover: 25
+  effortThreshold: 0.6
+  holdBreathAmount: 0.05
+--- !u!114 &3090561020673029638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3011180874795243944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4552f7cd052ee8c4fb2466a5648051eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Bodycam.BodycamOverlay
+  unitId: UNIT 12
+  officerId: ID 4471
+  dateFormat: yyyy-MM-dd  HH:mm:ss
+  useFakeDate: 0
+  fakeStartDate: 2026-03-14 22:41:07
+  textColor: {r: 0.92, g: 0.92, b: 0.92, a: 0.9}
+  recColor: {r: 0.95, g: 0.1, b: 0.1, a: 1}
+  fontSize: 22
+  margin: 36
+  recBlinkSeconds: 0.8
+  startBattery: 0.92
+  drainPerMinute: 0.4
+--- !u!114 &2486128900697214348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3011180874795243944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec9c71820fc0a50449d247bf4b1a8f78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Bodycam.BodycamWeaponLower
+  body: {fileID: 1099669112513828066}
+  fpsPlayer: {fileID: 0}
+  playerInput: {fileID: 0}
+  idleDelay: 0
+  combatHoldTime: 0
+  stillSpeedThreshold: 0.15
+  combatActionNames:
+  - Fire
+  - Aim
+  - Reload
+  - ThrowGrenade
+  - ChangeWeapon
+  lowerOffset: {x: 0, y: -0.02, z: -0.03}
+  lowerClavicleOffset: {x: 0, y: 0, z: 0}
+  lowerTime: 1.1
+  raiseTime: 0.3

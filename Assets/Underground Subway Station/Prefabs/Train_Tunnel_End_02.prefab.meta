@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: d13a64ae9ce09ef4b8be4a2f9f33758b
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 332280
+  packageName: Modular - Underground Subway Station
+  packageVersion: 1.0
+  assetPath: Assets/Underground Subway Station/Prefabs/Train_Tunnel_End_02.prefab
+  uploadId: 792606

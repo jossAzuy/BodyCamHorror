@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 65a5c90a9286cdd4899034df10fb4d7a
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 332280
+  packageName: Modular - Underground Subway Station
+  packageVersion: 1.0
+  assetPath: Assets/Underground Subway Station/Materials/Train.1001.mat
+  uploadId: 792606

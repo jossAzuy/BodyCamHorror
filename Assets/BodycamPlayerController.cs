@@ -11,6 +11,9 @@ namespace Bodycam
     ///   sits on this object's eye point, with yaw + pitch applied to the whole rig.
     /// - Speed is derived from the Animator "Gait" float that FPSPlayer already computes,
     ///   so movement and animation always agree.
+    /// - Optionally drives a float Animator parameter used as a Speed Multiplier on the
+    ///   locomotion states, so the arm sway can be slowed down without touching
+    ///   aiming / firing / reload animations.
     /// Runs before FPSCameraAnimator / Animator evaluation (execution order -100).
     /// </summary>
     [DefaultExecutionOrder(-100)]
@@ -60,6 +63,12 @@ namespace Bodycam
         [Tooltip("Eye height above the feet. The original prefab camera sits at ~1.654.")]
         [SerializeField] private float eyeHeight = 1.654f;
 
+        [Header("Animation sync")]
+        [Tooltip("Float parameter used as Speed Multiplier on locomotion states. Empty = disabled.")]
+        [SerializeField] private string locomotionSpeedParam = "LocomotionSpeed";
+        [Tooltip("1 = original animation speed. Lower = slower arm sway while moving.")]
+        [SerializeField, Range(0.2f, 1.5f)] private float locomotionAnimScale = 0.6f;
+
         private static readonly int GaitHash = Animator.StringToHash("Gait");
         private static readonly int IsInAirHash = Animator.StringToHash("IsInAir");
 
@@ -74,6 +83,9 @@ namespace Bodycam
         private float _airTime;
         private bool _wasGrounded = true;
         private bool _jumped;
+
+        private int _locoHash;
+        private bool _hasLocoParam;
 
         private void Reset()
         {
@@ -106,6 +118,20 @@ namespace Bodycam
             if (animator == null) animator = rigRoot.GetComponentInChildren<Animator>();
             if (playerSound == null) playerSound = rigRoot.GetComponentInChildren<FPSPlayerSound>();
             if (playerInput == null) playerInput = rigRoot.GetComponentInChildren<PlayerInput>();
+
+            // Only drive the locomotion multiplier if the parameter exists in the Animator.
+            if (animator != null && !string.IsNullOrEmpty(locomotionSpeedParam))
+            {
+                _locoHash = Animator.StringToHash(locomotionSpeedParam);
+                foreach (var p in animator.parameters)
+                {
+                    if (p.nameHash == _locoHash && p.type == AnimatorControllerParameterType.Float)
+                    {
+                        _hasLocoParam = true;
+                        break;
+                    }
+                }
+            }
 
             _cameraLocalInRig = rigRoot.InverseTransformPoint(cameraPoint.position);
 
@@ -261,6 +287,9 @@ namespace Bodycam
             // Overrides FPSPlayer's fixed 0.4s timer with the real ground state.
             bool inAir = !_wasGrounded && (_airTime > airGraceTime || _jumped);
             animator.SetBool(IsInAirHash, inAir);
+
+            // Slows only the states that use this parameter as their Speed Multiplier.
+            if (_hasLocoParam) animator.SetFloat(_locoHash, locomotionAnimScale);
         }
     }
 }
