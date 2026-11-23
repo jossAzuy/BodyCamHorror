@@ -162,10 +162,10 @@ MonoBehaviour:
     m_Value: 1
   lutIntensity:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0.393
   lutTexture:
     m_OverrideState: 1
-    m_Value: {fileID: 2800000, guid: 48b718f4290e24357b04d60b57590f22, type: 3}
+    m_Value: {fileID: 2800000, guid: 2f17411958b774a6d8af05e5a97f7241, type: 3}
     dimension: 1
   bloomIntensity:
     m_OverrideState: 1
@@ -429,21 +429,21 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 0.01
   lensDirtIntensity:
-    m_OverrideState: 0
-    m_Value: 0.3
+    m_OverrideState: 1
+    m_Value: 0.15
   lensDirtThreshold:
     m_OverrideState: 1
     m_Value: 0
   lensDirtTexture:
-    m_OverrideState: 0
-    m_Value: {fileID: 0}
+    m_OverrideState: 1
+    m_Value: {fileID: 2800000, guid: 3ffe6b2509a2b4ecfa7fbb37186a72c8, type: 3}
     dimension: 1
   lensDirtSpread:
     m_OverrideState: 1
     m_Value: 3
   chromaticAberrationIntensity:
-    m_OverrideState: 0
-    m_Value: 0.009
+    m_OverrideState: 1
+    m_Value: 0.015
   chromaticAberrationShift:
     m_OverrideState: 1
     m_Value: -1
@@ -775,13 +775,13 @@ MonoBehaviour:
     dimension: 1
   filmGrainEnabled:
     m_OverrideState: 0
-    m_Value: 0
+    m_Value: 1
   filmGrainIntensity:
     m_OverrideState: 1
-    m_Value: 0.5
+    m_Value: 1
   filmGrainResolution:
     m_OverrideState: 1
-    m_Value: 0.85
+    m_Value: 1
   filmGrainLumaAttenuation:
     m_OverrideState: 1
     m_Value: 0.8

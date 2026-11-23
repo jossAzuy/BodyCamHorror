@@ -6,3 +6,10 @@ NativeFormatImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 270649
+  packageName: VR FPS Kit
+  packageVersion: 
+  assetPath: Assets/XRI/Settings/Resources/XRDeviceSimulatorSettings.asset
+  uploadId: 0

@@ -1,5 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5951060569469752813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9229750f8aa45254c83220390ffd4eb5, type: 3}
+  m_Name: VHS
+  m_EditorClassIdentifier: FronkonGames.Retro.VHS::FronkonGames.Retro.VHS.VHS
+  m_Active: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37,7 +50,9 @@ MonoBehaviour:
   - {fileID: 7833122117494664109}
   - {fileID: 1896280791578869634}
   - {fileID: 4769937695363900657}
-  m_RendererFeatureMap: ad6b866f10d7b46c827f744055f1501af124e9cc0f393242
+  - {fileID: -5951060569469752813}
+  - {fileID: 2045326651799917439}
+  m_RendererFeatureMap: ad6b866f10d7b46c827f744055f1501af124e9cc0f39324213eaeb2ff19569ad7f532cd2c075621c
   m_UseNativeRenderPass: 1
   xrSystemData: {fileID: 0}
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
@@ -121,6 +136,19 @@ MonoBehaviour:
   stripUnityChromaticAberration: 0
   stripUnityDistortion: 0
   stripUnityDebugVariants: 0
+--- !u!114 &2045326651799917439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a95a6e417d4177749a1df85d7d554f64, type: 3}
+  m_Name: CRTTV
+  m_EditorClassIdentifier: FronkonGames.Retro.CRTTV::FronkonGames.Retro.CRTTV.CRTTV
+  m_Active: 1
 --- !u!114 &4769937695363900657
 MonoBehaviour:
   m_ObjectHideFlags: 0
