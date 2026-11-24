@@ -123,6 +123,9 @@ MonoBehaviour:
   turnRoll: 0.018
   maxTurnRoll: 3
   turnSmoothing: 5
+  turnYawLag: 0.02
+  maxTurnYaw: 6
+  turnYawSmoothing: 7
   landingKick: 2
   jumpKick: -1.2
   springStiffness: 45
@@ -152,8 +155,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4552f7cd052ee8c4fb2466a5648051eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bodycam.BodycamOverlay
+  visible: -1
+  recLabel: REC
   unitId: UNIT 12
   officerId: ID 4471
+  idSeparator: '   '
+  batteryPrefix: BAT
   dateFormat: yyyy-MM-dd  HH:mm:ss
   useFakeDate: 0
   fakeStartDate: 2026-03-14 22:41:07
@@ -190,5 +197,9 @@ MonoBehaviour:
   - ChangeWeapon
   lowerOffset: {x: 0, y: -0.02, z: -0.03}
   lowerClavicleOffset: {x: 0, y: 0, z: 0}
+  motion: {fileID: 0}
+  walkBobPosition: {x: 0.012, y: 0.03, z: 0.012}
+  walkBobLag: 0.6
+  walkBobSmoothing: 10
   lowerTime: 1.1
   raiseTime: 0.3

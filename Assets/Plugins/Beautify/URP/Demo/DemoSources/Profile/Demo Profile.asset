@@ -269,7 +269,7 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: {r: 1, g: 1, b: 1, a: 1}
   anamorphicFlaresIntensity:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 0.63
   anamorphicFlaresThreshold:
     m_OverrideState: 1
@@ -281,11 +281,11 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: {r: 0.5, g: 0.5, b: 1, a: 0}
   anamorphicFlaresVertical:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 1
   anamorphicFlaresSpread:
     m_OverrideState: 1
-    m_Value: 0.1
+    m_Value: 0.275
   anamorphicFlaresMaxBrightness:
     m_OverrideState: 0
     m_Value: 1000
